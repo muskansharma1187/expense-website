@@ -1,0 +1,249 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f7f3ec;
+    color: #292820;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header p {
+    color: #888477;
+    margin-top: 6px;
+}
+
+.profile {
+    width: 48px;
+    height: 48px;
+    background: #d97745;
+    color: white;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.summary {
+    margin-bottom: 30px;
+}
+
+.total-card {
+    background: #292820;
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 100%;
+}
+
+.total-card p {
+    color: #d0c9b9;
+    font-size: 15px;
+}
+
+.total-card h2 {
+    font-size: 38px;
+    margin: 12px 0;
+    color: #f5a36d;
+}
+
+.total-card span {
+    color: #b9b3a6;
+    font-size: 13px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 0.85fr 1.3fr;
+    gap: 25px;
+}
+
+.form-section,
+.expense-section {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #eee8de;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 13px 0 7px;
+}
+
+input,
+select {
+    padding: 13px;
+    border: 1px solid #e6e1d8;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    background: #fcfbf9;
+    font-family: inherit;
+    color: #292820;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    border-color: #d97745;
+}
+
+button {
+    border: none;
+    background: #d97745;
+    color: white;
+    padding: 14px;
+    border-radius: 9px;
+    margin-top: 23px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bd6033;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-heading span {
+    font-size: 12px;
+    color: #d97745;
+    font-weight: 600;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #eee9e1;
+    border-radius: 12px;
+}
+
+.expense-info h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.expense-info p {
+    font-size: 12px;
+    color: #999184;
+}
+
+.expense-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.expense-amount {
+    font-weight: 700;
+    color: #292820;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background: #fff0eb;
+    color: #c45135;
+    padding: 9px 11px;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #c45135;
+    color: white;
+}
+
+.empty {
+    text-align: center;
+    padding: 35px 10px;
+    color: #999184;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #999184;
+    font-size: 12px;
+}
+
+@media(max-width: 750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .total-card h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 400px) {
+    .expense-item {
+        align-items: flex-start;
+    }
+
+    .expense-right {
+        gap: 6px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
